@@ -30,7 +30,7 @@ const Account = () => {
                 <img src="/images/pp/pp-1.jpg" alt="" />
               </div>
               <div className="user-name">
-                <h4>Hello Mom</h4>
+                <h4>Hello Sophia</h4>
               </div>
             </div>
             <div className="account-nav">
