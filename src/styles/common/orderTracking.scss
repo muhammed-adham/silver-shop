@@ -1,0 +1,22 @@
+.order-tracking-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-block: 1.5rem;
+    color: black;
+    .status-container{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        .statu{
+            display: flex;
+            gap: .5rem;
+            text-transform: capitalize;
+            font-family: RaleWay;
+            position: relative;
+            svg{
+                color: $success;
+            }
+        }
+    }
+}

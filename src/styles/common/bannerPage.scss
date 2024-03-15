@@ -1,0 +1,48 @@
+.bannerPage {
+  height: 35rem;
+  position: relative;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+  }
+  .overlay {
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: $white;
+    .container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 1rem;
+      font-family: $ff-main;
+      text-transform: capitalize;
+      h4 {
+        font-size: 1.72813rem;
+      }
+      .crumbs {
+        display: flex;
+        gap: 0.5rem;
+        h6 {
+          font-size: 1rem;
+        }
+      }
+      a{
+        opacity: .5;
+        transition: .4s;
+        &:hover{
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

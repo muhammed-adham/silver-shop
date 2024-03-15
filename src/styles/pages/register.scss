@@ -1,0 +1,174 @@
+.form-background {
+  background-color: #1a1a1a;
+  background-image: url(/images/bg/bg-auth.jpg);
+  background-size: cover;
+  background-blend-mode: color-dodge;
+  background-position: 0% 66%;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  h1 {
+    text-transform: uppercase;
+    color: white;
+    font-family: $ff-logo;
+    font-size: 2.98625rem;
+    text-shadow: 0px 0px 3px white;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30%;
+    background-color: #242424;
+    gap: 2rem;
+    padding: 2rem;
+    font-family: $ff-main;
+    color: white;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 8px black;
+    .form-header {
+      text-align: center;
+      width: 100%;
+      h4 {
+        text-transform: uppercase;
+        opacity: 0.5;
+      }
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      gap: 1.5rem;
+      .form-group {
+        text-transform: capitalize;
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        width: 100%;
+        position: relative;
+        .label{
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            .confirm-valid {
+                width: fit-content;
+                svg {
+                  color: $success !important;
+                }
+              }
+        }
+        input {
+          // background-color: transparent;
+          border: 1px solid white;
+          border-radius: .25rem;
+          height: 2rem;
+          padding: 1rem;
+          color: black;
+          font-family: $ff-main;
+          &::placeholder{
+            color: #646464;
+          }
+          &:focus {
+            // border: none;
+            outline: none;
+            background-color: white;
+          }
+          &:valid {
+            background-color: white;
+          }
+          &.invalid {
+            border: 3px solid $danger;
+            background-color: white;
+          }
+          &:required {
+            background-color: white;
+          }
+          &:disabled {
+            opacity: 0.2;
+          }
+        }
+
+        p {
+          color: $danger;
+        }
+        .show-icon {
+          cursor: pointer;
+          position: absolute;
+          right: 0;
+          opacity: 0.5;
+          font-size: large;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+      .form-btns {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: capitalize;
+        gap: 1.5rem;
+        button {
+          text-transform: capitalize;
+          font-size: 1rem;
+          padding: 0.5rem 1rem;
+          background-color: #1f7a8c;
+          color: white;
+          border: none;
+          box-shadow: none;
+          border-radius: 0.25rem;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          &:hover {
+            background-color: hwb(190 12% 20%);
+            box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.3);
+            // color: black;
+          }
+        }
+        a {
+          font-size: 1rem;
+          text-decoration: underline;
+          text-underline-offset: 0.25rem;
+          transition: all 0.3s ease;
+          &:hover {
+            color: $success;
+          }
+        }
+      }
+    }
+  }
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+//for label activation
+.not-active {
+  opacity: 0.2 !important;
+}
+
+//for icon validation
+.not-valid{
+    opacity:0 ;
+    transition: .5 all ease;
+
+}
+
+.visit-link{
+  color: $white;
+  opacity: .3;
+  cursor: pointer;
+  &:hover{
+    opacity: 1;
+  }
+}

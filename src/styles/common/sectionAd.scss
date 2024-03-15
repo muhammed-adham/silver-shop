@@ -1,0 +1,16 @@
+.section-ad{
+    height: 35rem;
+    background-position: 0% 30%;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    h5{
+        font-family: $ff-main;
+        font-size: 3rem;
+        color: $success;
+        font-weight: 700;
+        width: 70%;
+        padding-inline: 8rem;
+    }
+}

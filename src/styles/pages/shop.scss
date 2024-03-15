@@ -1,0 +1,50 @@
+.shop-sec{
+    padding-block: 1.5rem;
+    .container{
+        display: flex;
+        gap: 4rem;
+        // justify-content: space-between;
+        .filter{
+            display: flex;
+            padding-right: 1rem;
+            margin-right: 1rem;
+            border-right: 1px black solid;
+            form{
+                display: flex;
+                flex-direction: column;
+                .form-title{
+                    h4{
+                        font-size: 1rem;
+                    }
+                }
+                .form-container{
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+                }
+                .filter-group{
+                    display: flex;
+                    gap: .5rem;
+                    label{
+                        text-transform: capitalize;
+                        font-family: $ff-main;
+                        cursor: pointer;
+                    }
+                    input[type=radio]{
+                        accent-color: #d57602;
+                        cursor: pointer;
+                    }
+
+                }
+
+            }
+        }
+        .cards-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            min-height: 50dvh;
+        }
+    }
+}
+

@@ -1,0 +1,108 @@
+.fcard {
+  width: 20.5rem;
+  height: 20.5rem;
+  border-radius: 1rem;
+  background-color: $primary;
+  overflow: hidden;
+  position: relative;
+  font-family: $ff-main;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 1rem;
+  &:hover {
+    img {
+      bottom: 1rem;
+      transform: scale(130%);
+    }
+    .actions {
+      opacity: 1;
+      bottom: 1.5rem;
+    }
+    .remove-wish {
+      opacity: 0.5;
+      right: 1.5rem;
+    }
+    span {
+      opacity: 1;
+      left: 1.5rem;
+    }
+  }
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    bottom: 4.88rem;
+    transition: 0.4s;
+  }
+  span {
+    font-size: 1.44rem;
+    font-weight: 700;
+    position: absolute;
+    top: 1.5rem;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: 0.4s;
+  }
+  .remove-wish {
+    font-size: 1.5rem;
+    color: $black;
+    font-weight: 700;
+    position: absolute;
+    top: 1.5rem;
+    right: 0;
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.4s;
+    filter: drop-shadow( -2px -2px 4px white) drop-shadow( 2px 2px 4px white); 
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  p {
+    font-size: 1rem;
+  }
+  .actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    color: $black;
+    z-index: 1;
+    transition: 0.4s;
+    opacity: 0;
+    .action {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem;
+      background-color: $white;
+      border-radius: 0.5rem;
+      opacity: 0.5;
+      cursor: pointer;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  .active-wish {
+    color: $danger;
+  }
+  .active-cart {
+    color: $danger;
+  }
+}
+
+
+.inactive{
+    display: none !important;
+}
