@@ -69,8 +69,8 @@ const Header = () => {
                 </div>
                 <div
                   className="userProfile"
-{/*                   onClick={() => navigate("/account/activity")}
-                > */}
+                  onClick={() => navigate("/account/activity")}
+                >
                   <img src="/images/pp/pp-1.jpg" alt="" />
                 </div>
               </div>
